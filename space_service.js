@@ -170,4 +170,4 @@ setInterval(function(){
 }, 5000)
 
 // start listening
-app.listen(3000);
+app.listen(process.env.PORT);
