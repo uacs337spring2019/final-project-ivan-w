@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+	Most of this game runs via JS.
+	This document describes the basic
+	contents of the webpage.
+	-->
+
+<head>
+	<title>Peace in Space</title>
+	<link href="space.css" type="text/css" rel="stylesheet" />
+	<script src="space.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div id="resources">
+		<img id="spaceship" src="TriangularSpaceship_blue.png" />
+		<img id="afterburn" src="TriangularSpaceship_AfterBurn.png" />
+		<img id="laserburn" src="TriangularSpaceship_LaserBurn.png" />
+	</div>
+	<div id="mainView">
+		<canvas id="battleground"></canvas>
+		<canvas id="starscape"></canvas>
+		<p id="status">floating through dark space... </p>
+	</div>
+	<div id="welcome">
+		<img src="logo.png" alt="cyberspace logo" id="logo" />
+		<p>Welcome to cyberspace! Enjoy a peaceful flight through the stars and look out for other visiters!</p>
+		<button id="takeoff">takeoff</button>
+	</div>
+</body>
+
+</html>

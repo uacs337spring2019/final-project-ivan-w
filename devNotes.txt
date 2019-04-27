@@ -1,0 +1,12 @@
+I've run into some problems getting my server to store and return all of my spaceships. However, I have a nice free-flight app that's pretty nice so far. I'm leaving in a dummy spaceship with the engine on low so you can see something cool.
+
+Okay, so what's the plan?
+
+FACT: people in space shoot one another
+ALSO FACT: people in cyberspace shoot one another
+
+Things I still want to add:
+	Black holes -> either tunnel through them or DIE (maybe a bit of both...)
+	Lasers, fighting, explosions (red, orange circles), etc.
+	Multiplayer
+	Google Ads (so I can get rich)
