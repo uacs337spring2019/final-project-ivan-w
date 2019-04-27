@@ -1,0 +1,8 @@
+{
+    "name": "Cyberspace Freeflight",
+    "description": "An interactive app that allows a user to fly a spaceship in cyberspace",
+    "repository": "https://github.com/uacs337spring2019/final-project-ivan-w.git",
+    "logo": "https://github.com/uacs337spring2019/final-project-ivan-w/public/logo2.png"
+    ,
+    "keywords": ["space", "node", "final project"]
+}
