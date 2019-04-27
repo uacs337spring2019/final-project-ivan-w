@@ -443,7 +443,7 @@
         fetch("https://cyberspace-freeflight.herokuapp.com/", fetchOptions)
             .then(checkStatus)
             .then(function (response) {
-                console.log(response.sprites);
+                //console.log(response.sprites);
                 // reset list
                 sprites.length = 0;
                 //sprites.push(response.userSpaceship);
