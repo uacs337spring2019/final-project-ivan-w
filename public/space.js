@@ -67,7 +67,7 @@
                 function () {
                     getSyncedSprites(sprites);
                 }
-                , 150);
+                , 300);
         }
     }
 
@@ -405,8 +405,8 @@
             sprite.x += sprite.velocityX;
             sprite.y += sprite.velocityY;
 
-            sprite.x = sprite.x % 2000;
-            sprite.y = sprite.y % 2000;
+            sprite.x = sprite.x % 10000;
+            sprite.y = sprite.y % 10000;
         }
     }
 
