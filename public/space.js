@@ -447,10 +447,10 @@
             .then(function (response) {
                 //console.log(response.sprites);
                 // reset list
-                sprites.length = 0;
+                sprites.length = 1;
                 //sprites.push(response.userSpaceship);
                 //sprites = response.sprites;
-                for (let i = 0; i < response.sprites.length; ++i) {
+                for (let i = 1; i < response.sprites.length; ++i) {
                     sprites.push(response.sprites[i]);
                 }
 
