@@ -1,0 +1,29 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "free-fly through space and see other users",
+  "main": "public/space.js",
+  "dependencies": {
+    "client-sessions": "^0.8.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
+    "session": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uacs337spring2019/final-project-ivan-w.git"
+  },
+  "keywords": [
+    "space"
+  ],
+  "author": "Ivan Webber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uacs337spring2019/final-project-ivan-w/issues"
+  },
+  "homepage": "https://github.com/uacs337spring2019/final-project-ivan-w#readme"
+}
