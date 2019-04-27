@@ -198,7 +198,7 @@
     /** just updates that text */
     function updateStatus(spaceship, numOthers) {
         let status = document.getElementById("status");
-        status.innerText = numOthers + " other users\nx: " + spaceship.x + " y: " + spaceship.y;
+        status.innerText = numOthers + " active users\nx: " + spaceship.x + " y: " + spaceship.y;
     }
 
     /** draws all sprites (tis the goal) */
