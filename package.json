@@ -2,6 +2,7 @@
   "name": "final-project",
   "version": "1.0.0",
   "description": "free-fly through space and see other users",
+  "start": "space_service.js",
   "main": "public/space.js",
   "dependencies": {
     "client-sessions": "^0.8.0",
