@@ -35,6 +35,8 @@
         // initialize elements ******************
         let stars = initStarscape();
         document.getElementById("takeoff").onclick = function(event) {
+            console.log("taking off!!!);
+                        
             // remove welcome window
             document.getElementById("welcome").style.visibility = "hidden";
 
