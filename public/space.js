@@ -67,7 +67,7 @@
                 function () {
                     getSyncedSprites(sprites);
                 }
-                , 300);
+                , 150);
         }
     }
 
