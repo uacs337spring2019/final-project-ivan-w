@@ -461,7 +461,7 @@
 
     function checkStatus(response) {
         if (response.status < 300) {
-            console.log(response);
+            //console.log(response);
             return response.json();
         } else {
             console.log("error: " + response);
