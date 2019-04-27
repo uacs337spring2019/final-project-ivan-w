@@ -131,7 +131,7 @@
             },
             body: JSON.stringify(userSpaceship)
         }
-        fetch("http://localhost:3000", fetchOptions)
+        fetch("https://cyberspace-freeflight.herokuapp.com/", fetchOptions)
             .then(function (response) {
                 console.log(response.text());
             })
@@ -196,9 +196,9 @@
     }
 
     /** just updates that text */
-    function updateStatus(spaceship) {
+    function updateStatus(spaceship, numOthers) {
         let status = document.getElementById("status");
-        status.innerText = "floating in dark space...\nx: " + spaceship.x + " y: " + spaceship.y;
+        status.innerText = numOthers + " other users\nx: " + spaceship.x + " y: " + spaceship.y;
     }
 
     /** draws all sprites (tis the goal) */
@@ -440,7 +440,7 @@
             credentials: 'include',
             body: JSON.stringify(userSpaceship)
         }
-        fetch("http://localhost:3000", fetchOptions)
+        fetch("https://cyberspace-freeflight.herokuapp.com/", fetchOptions)
             .then(checkStatus)
             .then(function (response) {
                 console.log(response.sprites);
@@ -452,7 +452,7 @@
                     sprites.push(response.sprites[i]);
                 }
 
-                updateStatus(userSpaceship); // abs position
+                updateStatus(userSpaceship, response.sprites.length); // abs position
                 return sprites;
             })
     }
