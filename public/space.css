@@ -50,4 +50,5 @@ canvas, #mainView {
 
 #status {
     padding-left: 10px;
+    visibility: hidden;
 }
