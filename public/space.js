@@ -180,14 +180,14 @@
 
     /** draws all sprites relative to the user's spaceship */
     function drawBattleground(sprites) {
-        let spaceship = sprites[0];
+        let userSpaceship = sprites[0];
         
         let battleground = document.getElementById("battleground");
         let context = battleground.getContext("2d");
         
         // determine the offsets needed
-        let deltaX = (battleground.width / 2) - spaceship.x;
-        let deltaY = (battleground.height / 2) - spaceship.y;
+        let deltaX = (battleground.width / 2) - userSpaceship.x;
+        let deltaY = (battleground.height / 2) - userSpaceship.y;
 
         // clear battleground
         context.clearRect(0, 0, battleground.width, battleground.height);
@@ -202,6 +202,8 @@
             // we use the same base images with alternative hue
             context.filter = "hue-rotate(" + sprite.hue + "deg)";
             
+            let spaceship = document.getElementById("spaceship");
+
             if (sprite.engine) { // afterburn underneath if engine is on
                 let afterburn = document.getElementById("afterburn");
                 context.drawImage(afterburn, -(spaceship.width * 6 / 8), -afterburn.height / 2);
@@ -213,7 +215,6 @@
              }
 
               // and always the spaceship itself
-              let spaceship = document.getElementById("spaceship");
               context.drawImage(spaceship, -spaceship.width / 2, -spaceship.height / 2);
             
             context.restore(); // go back to normal
