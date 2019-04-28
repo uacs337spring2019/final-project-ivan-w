@@ -26,7 +26,7 @@
             // remove welcome window
             let welcome = document.getElementById("welcome");
             welcome.style.visibility = "hidden";
-            welcome.innerHtml = ""; // prevents addition of scrollbar
+            welcome.innerHTML = ""; // prevents addition of scrollbar
             
             // finish startup code
             initBattleground();
