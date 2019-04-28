@@ -40,7 +40,7 @@ app.use(function(req, res, next) {
 
 /* Instead of setting up a database I just use a Map for matching cookies to users */
 let sprites = new Map();
-userNum = 0; // used to give unique ids
+userNum = 1; // used to give unique ids
 
 function cleanSprites() {
     for (let [key, value] of sprites) {
