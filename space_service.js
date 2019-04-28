@@ -42,19 +42,11 @@ app.use(function(req, res, next) {
 let sprites = new Map();
 userNum = 1; // used to give unique ids
 
-function cleanSprites() {
-    for (let [key, value] of sprites) {
-        if (value.dueDate < Date.now()) {
-            sprites.delete(key);
-        }
-    }
-}
-
 /** Add/Update Sprite: the user may send us sprites that we will store to our database. Each user is only allowed one spaceship, but we allow them to send lasers and explosions (accusations of collisions) */
 app.post('/', jsonParser, function(req, res) {
     res.header("Access-Control-Allow-Origin", "*");
-	if ((sprites.size() % 100) == 1) {
-		console.log("we now have " + sprites.size() + " visitors");
+	if ((sprites.size % 100) == 1) {
+		console.log("we now have " + sprites.size + " visitors");
 	}
 	
     if (!req.session.spriteKey) {
