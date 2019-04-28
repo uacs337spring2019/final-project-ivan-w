@@ -28,6 +28,9 @@
             welcome.style.visibility = "hidden";
             welcome.innerHTML = ""; // prevents addition of scrollbar
             
+            // show status
+            document.getElementById("status").style.visibility = "visible";
+            
             // finish startup code
             initBattleground();
             let sprites = initSprites();
