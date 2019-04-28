@@ -40,10 +40,11 @@ canvas, #mainView {
     width: 100%;
 }
 
-#resources {
+#resources, #resources * {
     z-index: 1;
     position: absolute;
-    text-align: center;
+    left: 0;
+    top: 0;
     visibility: hidden;
 }
 
