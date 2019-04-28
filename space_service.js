@@ -46,7 +46,7 @@ userNum = 1; // used to give unique ids
 app.post('/', jsonParser, function(req, res) {
     res.header("Access-Control-Allow-Origin", "*");
 	if ((sprites.size % 100) == 1) {
-		console.log("we now have " + sprites.size + " visitors");
+		console.log("we now have " + sprites.size + " visitor(s)");
 	}
 	
     if (!req.session.spriteKey) {
@@ -82,14 +82,13 @@ app.post('/', jsonParser, function(req, res) {
 
 // keep the server from getting glugged with old sprites
 setInterval(function(){
-    console.log("I love cleaning!!!");
-        // remove old sprites
-        for (let [key, value] of sprites.entries()) {
-            if (!value.dueDate || value.dueDate > Date.now()) {
-                // get rid of expired or illigitimate sprites
-                sprites.delete(key);
-            }
-        }
+    // remove old sprites
+    for (let [key, value] of sprites.entries()) {
+        if (!value.dueDate || value.dueDate < Date.now()) {
+           // get rid of expired or illigitimate sprites
+           sprites.delete(key);
+       }
+   }
 }, 5000) // once every 5 seconds
 
 // start listening
